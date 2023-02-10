@@ -16,7 +16,7 @@ const nextConfig = {
           }/mainEntry.js`,
           shared: `shared@${
             process.env.MODULE_SHARED_ENTRYPOINT_URL
-          }/_next/static/${isServer ? "ssr" : "chuncks"}/sharedEntry.js`,
+          }/_next/static/${isServer ? "ssr" : "chunks"}/sharedEntry.js`,
         },
         filename: "static/chuncks/checkoutEntry.js",
         extraOptions: {
