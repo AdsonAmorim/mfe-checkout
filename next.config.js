@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 
 const { NextFederationPlugin } = require("@module-federation/nextjs-mf");
-const dependencies = require("./package.json").dependencies;
 
 const nextConfig = {
   webpack: (config, options) => {
@@ -24,6 +23,7 @@ const nextConfig = {
           automaticAsyncBoundary: true,
           exposePages: true,
         },
+        remoteType: "module",
       })
     );
     return config;

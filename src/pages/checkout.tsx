@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
+import React from "react";
 
-const Button = dynamic(() => import("shared/button"));
+const Button = dynamic<any>((): any => import("shared/button"));
 
 export default function Checkout() {
   const handleClick = () => {
