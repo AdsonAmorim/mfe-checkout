@@ -12,7 +12,7 @@ const nextConfig = {
         name: "checkout",
         remotes: {
           main: `main@${process.env.MODULE_MAIN_ENTRYPOINT_URL}/_next/static/${
-            isServer ? "ssr" : "chuncks"
+            isServer ? "ssr" : "chunks"
           }/mainEntry.js`,
           shared: `shared@${
             process.env.MODULE_SHARED_ENTRYPOINT_URL
