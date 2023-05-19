@@ -3,8 +3,8 @@ import dynamic from "next/dynamic";
 import { Brands } from "@/types/brands";
 import { Wrapper } from "./styles";
 
-const Button = dynamic<any>(() => import("shared/button"));
-const TextField = dynamic<any>(() => import("shared/text-field"));
+const Button = dynamic<any>((): any => import("shared/button"));
+const TextField = dynamic<any>((): any => import("shared/text-field"));
 
 type CreditCardProps = {
   number: string;
