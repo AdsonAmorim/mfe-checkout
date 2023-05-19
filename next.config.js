@@ -18,12 +18,13 @@ const nextConfig = {
             process.env.MODULE_SHARED_ENTRYPOINT_URL
           }/_next/static/${isServer ? "ssr" : "chunks"}/sharedEntry.js`,
         },
-        filename: "static/chuncks/checkoutEntry.js",
+        filename: "static/chunks/checkoutEntry.js",
         extraOptions: {
           automaticAsyncBoundary: true,
           exposePages: true,
         },
         remoteType: "module",
+        runtime: false,
       })
     );
     return config;
